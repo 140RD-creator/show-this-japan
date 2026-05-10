@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show This Japan</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" role="banner" aria-label="Show This Japan hero">
+        <div class="hero-overlay">
+          <p class="label">Show This Japan</p>
+          <h1>Show This Japan</h1>
+          <p class="lead">迷ったとき、見せるだけ。日本で使えるやさしい日本語フレーズ。</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2><span class="icon" aria-hidden="true">⚠️</span>Problem</h2>
+        <p>道がわからない、緊張して声をかけづらい。言葉が出ないだけで移動がストレスになります。</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="icon" aria-hidden="true">🧭</span>What this project does</h2>
+        <p>フレーズを「日本語・ローマ字・英語」で表示。そのまま相手に見せるだけで伝えられます。</p>
+      </section>
+
+      <section class="section">
+        <h2><span class="icon" aria-hidden="true">🗂️</span>Sample phrase card</h2>
+        <article class="phrase-card" aria-label="Sample phrase card">
+          <p><span>Japanese</span> ○○駅はどこですか？</p>
+          <p><span>Romaji</span> ○○ eki wa doko desu ka?</p>
+          <p><span>English</span> Where is ○○ station?</p>
+        </article>
+      </section>
+
+      <section class="section follow">
+        <h2>Follow on Instagram</h2>
+        <p>新しいフレーズカードはInstagramで更新します。</p>
+        <p class="cta-wrap">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="cta-btn">Instagramでチェックする</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">© 2026 Show This Japan. All rights reserved.</footer>
+  </body>
+</html>
