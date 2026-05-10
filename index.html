@@ -1,42 +1,67 @@
 
-<!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Show This Japan</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <main class="container">
-    <section class="hero">
-      <h1>Show This Japan</h1>
-      <p>道に迷ったときや不安なとき、スマホで日本語フレーズを見せて伝えるためのプロジェクトです。</p>
-    </section>
-
-    <section>
-      <h2>Problem</h2>
-      <p>日本語に自信がないと、簡単な質問でも緊張してしまいます。</p>
-    </section>
-
-    <section>
-      <h2>What this project does</h2>
-      <p>短くて丁寧な日本語フレーズを、見せるだけで伝わる形で提供します。</p>
-    </section>
-
-    <section>
-      <h2>Sample phrase card</h2>
-      <article class="card">
-        <p><strong>Japanese:</strong> ○○駅はどこですか？</p>
-        <p><strong>Romaji:</strong> ○○ eki wa doko desu ka?</p>
-        <p><strong>English:</strong> Where is ○○ station?</p>
-      </article>
-    </section>
-
-    <section>
-      <h2>Follow on Instagram</h2>
-      <p><a href="https://instagram.com/" target="_blank" rel="noopener">Instagramでフォローする</a></p>
-    </section>
-  </main>
-</body>
-</html>
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..bc0cf0d7a46cbae51ee50ab5f30d7fb1c8dd9733
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,60 @@
++<!doctype html>
++<html lang="ja">
++  <head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>Show This Japan</title>
++    <link rel="stylesheet" href="styles.css" />
++  </head>
++  <body>
++    <main class="page">
++      <section class="hero reveal" role="banner" aria-label="Dark red gradient hero background">
++        <div class="hero-overlay">
++          <p class="label">Show This Japan</p>
++          <h1>Show This Japan</h1>
++          <p class="lead">
++            外国人が日本で不安なときに、スマホで見せられるシンプルな日本語フレーズを。
++            必要な言葉を、上品で見やすいカード形式で届けます。
++          </p>
++        </div>
++      </section>
++
++      <section class="section reveal">
++        <h2><span class="icon" aria-hidden="true">⚠️</span>Problem</h2>
++        <p>
++          道がわからない、緊張して声をかけづらい。言葉が出ないだけで、
++          小さな移動や買い物が大きなストレスになります。
++        </p>
++      </section>
++
++      <section class="section reveal">
++        <h2><span class="icon" aria-hidden="true">🧭</span>What this project does</h2>
++        <p>
++          よく使うフレーズを「日本語・ローマ字・英語」で表示。
++          そのまま相手に見せるだけで、落ち着いて伝えられます。
++        </p>
++      </section>
++
++      <section class="section reveal">
++        <h2><span class="icon" aria-hidden="true">🗂️</span>Sample phrase card</h2>
++        <article class="phrase-card" aria-label="Sample phrase card">
++          <p><span>Japanese</span> ○○駅はどこですか？</p>
++          <p><span>Romaji</span> ○○ eki wa doko desu ka?</p>
++          <p><span>English</span> Where is ○○ station?</p>
++        </article>
++      </section>
++
++      <section class="section follow reveal">
++        <h2>Follow on Instagram</h2>
++        <p>新しいフレーズカードはInstagramで更新します。</p>
++        <p class="cta-wrap">
++          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="cta-btn"
++            >Instagramでチェックする</a
++          >
++        </p>
++      </section>
++    </main>
++
++    <footer class="site-footer">© 2026 Show This Japan. All rights reserved.</footer>
++  </body>
++</html>
