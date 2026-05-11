@@ -77,6 +77,16 @@ h2 {
 
 p { margin: 0; }
 
+ul {
+  margin: 0.55rem 0 0.75rem 1.1rem;
+  padding: 0;
+}
+
+li + li {
+  margin-top: 0.3rem;
+}
+
+
 .phrase-card {
   border-top: 3px solid var(--accent-red);
   border-radius: 14px;
