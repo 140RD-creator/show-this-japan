@@ -1,132 +1,78 @@
-:root {
-  --bg: #ffffff;
-  --text: #111111;
-  --accent-red: #e63329;
-  --accent-navy: #1b2a4a;
-  --line: #eceff5;
-}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show This Japan</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" role="banner" aria-label="Show This Japan hero">
+        <div class="hero-overlay">
+          <p class="label">Show This Japan</p>
+          <h1>Show This Japan</h1>
+          <p class="lead">Simple Japanese phrase cards you can quickly show on your phone in Japan.</p>
+        </div>
+      </section>
 
-* { box-sizing: border-box; }
+      <section class="section">
+        <h2><span class="icon" aria-hidden="true">⚠️</span>Japan is amazing, but small situations can feel stressful.</h2>
+        <p>Getting lost, feeling sick, ordering food, or asking for help can be difficult when you do not speak Japanese.</p>
+      </section>
 
-body {
-  margin: 0;
-  background: linear-gradient(180deg, #fff 0%, #fff 70%, #f9fbff 100%);
-  color: var(--text);
-  font-family: "Inter", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.7;
-}
+      <section class="section">
+        <h2><span class="icon" aria-hidden="true">🧭</span>What this project does</h2>
+        <p>Show This Japan creates simple phrase cards with Japanese, romaji, and English. You can save them and show them on your phone when you need help.</p>
+      </section>
 
-.page {
-  width: min(860px, 92%);
-  margin: 0 auto;
-  padding: 1rem 0 3rem;
-}
+      <section class="section">
+        <h2><span class="icon" aria-hidden="true">🪜</span>How it works</h2>
+        <p>Each card shows:</p>
+        <ul>
+          <li>Japanese</li>
+          <li>Romaji</li>
+          <li>English meaning</li>
+        </ul>
+        <p>So you can understand the phrase and show it to someone easily.</p>
+      </section>
 
-.hero {
-  min-height: 52vh;
-  border-radius: 18px;
-  overflow: hidden;
-  background: linear-gradient(145deg, #4b0f17 0%, #7b1724 50%, #b3232f 100%);
-  box-shadow: 0 18px 40px rgba(75, 15, 23, 0.28);
-}
-
-.hero-overlay {
-  min-height: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 1.25rem;
-  color: #fff;
-}
-
-.label {
-  display: inline-block;
-  width: fit-content;
-  margin: 0 0 0.8rem;
-  padding: 0.2rem 0.65rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.82);
-  font-size: 0.82rem;
-  font-weight: 700;
-}
-
-h1,
-h2 { margin: 0 0 0.65rem; line-height: 1.25; }
-
-h1 {
-  color: #fff;
-  font-size: clamp(2.3rem, 9vw, 4.2rem);
-  text-shadow: 0 0 10px rgba(255,255,255,.28), 0 8px 18px rgba(0,0,0,.25);
-}
-
-h2 {
-  color: var(--accent-red);
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  font-size: 1.2rem;
-}
-
-.icon { font-size: 1rem; }
-.lead { margin: 0; font-size: 1.02rem; }
-
-.section {
-  padding: 1.45rem 0;
-  border-bottom: 1px solid var(--line);
-}
-
-p { margin: 0; }
-
-ul {
-  margin: 0.55rem 0 0.75rem 1.1rem;
-  padding: 0;
-}
-
-li + li {
-  margin-top: 0.3rem;
-}
+      <section class="section">
+        <h2><span class="icon" aria-hidden="true">🗂️</span>Sample phrase card</h2>
+        <article class="phrase-card" aria-label="Sample phrase card">
+          <p><span>Japanese</span> 近くの病院はどこですか？</p>
+          <p><span>Romaji</span> chikaku no byouin wa doko desu ka?</p>
+          <p><span>English</span> Where is the nearest hospital?</p>
+        </article>
+      </section>
 
 
-.phrase-card {
-  border-top: 3px solid var(--accent-red);
-  border-radius: 14px;
-  padding: 1rem;
-  background: #fff8f0;
-  box-shadow: 0 12px 28px rgba(27, 42, 74, 0.16);
-}
+      <section class="section request">
+        <h2>Want a phrase for your situation?</h2>
+        <p>Tell me what situation makes you nervous in Japan. I may use your request to create future phrase cards.</p>
+        <p class="examples-title">Examples:</p>
+        <ul class="example-list">
+          <li>station</li>
+          <li>hospital</li>
+          <li>restaurant</li>
+          <li>hotel</li>
+          <li>shopping</li>
+          <li>emergency</li>
+        </ul>
+        <p class="cta-wrap">
+          <a href="https://forms.gle/PASTE_GOOGLE_FORM_LINK_HERE" target="_blank" rel="noopener noreferrer" class="cta-btn">Request a phrase</a>
+        </p>
+      </section>
 
-.phrase-card p + p { margin-top: 0.55rem; }
+      <section class="section follow">
+        <h2>Follow on Instagram</h2>
+        <p>New phrase cards are posted on Instagram for travelers and visitors in Japan.</p>
+        <p class="cta-wrap">
+          <a href="https://www.instagram.com/show_thisjapan___/" target="_blank" rel="noopener noreferrer" class="cta-btn">Open Instagram</a>
+        </p>
+      </section>
+    </main>
 
-.phrase-card span {
-  display: inline-block;
-  min-width: 78px;
-  font-weight: 700;
-  color: var(--accent-red);
-}
-
-.follow { text-align: center; }
-.cta-wrap { margin-top: 1rem; }
-
-.cta-btn {
-  display: inline-block;
-  padding: 0.8rem 1.3rem;
-  border-radius: 999px;
-  background: var(--accent-red);
-  color: #fff;
-  text-decoration: none;
-  font-weight: 800;
-  box-shadow: 0 12px 26px rgba(230, 51, 41, 0.3);
-}
-
-.site-footer {
-  border-top: 1px solid var(--line);
-  text-align: center;
-  color: #4f5d78;
-  font-size: 0.9rem;
-  padding: 1rem 0 1.6rem;
-}
-
-@media (min-width: 768px) {
-  .hero-overlay { padding: 2rem; }
-  .section { padding: 1.8rem 0; }
-}
+    <footer class="site-footer">© 2026 Show This Japan. All rights reserved.</footer>
+  </body>
+</html>
