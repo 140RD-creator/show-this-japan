@@ -27,8 +27,8 @@ body {
   border-radius: 18px;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(145deg, #4b0f17 0%, #7b1724 52%, #b3232f 100%);
-  box-shadow: 0 18px 40px rgba(75, 15, 23, 0.28);
+  background: linear-gradient(145deg, #dff1ff 0%, #c8e7ff 52%, #b4dcff 100%);
+  box-shadow: 0 18px 40px rgba(27, 42, 74, 0.18);
 }
 
 .hero::before {
