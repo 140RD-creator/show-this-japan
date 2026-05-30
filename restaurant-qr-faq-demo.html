@@ -1,60 +1,161 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant QR FAQ Demo</title>
+    <title>Korean BBQ All-You-Can-Eat FAQ | 韓国焼肉食べ放題 FAQ</title>
     <link rel="stylesheet" href="restaurant-qr-faq-demo.css" />
   </head>
   <body>
     <main class="page">
-      <header class="hero" aria-label="Restaurant QR FAQ Demo">
-        <p class="tag">Restaurant QR FAQ Demo</p>
-        <h1>Restaurant QR FAQ Demo Page</h1>
-        <p class="lead">This is a sample page where guests can quickly check common questions by scanning a table QR code.</p>
+      <header class="hero" aria-label="Korean BBQ All-You-Can-Eat FAQ Demo">
+        <p class="tag">Korean BBQ All-You-Can-Eat FAQ | 韓国焼肉食べ放題 FAQ</p>
+        <h1>Korean BBQ All-You-Can-Eat Guide<br />韓国焼肉食べ放題ガイド</h1>
+        <p class="lead">
+          Scan this QR code to check our dining rules, course options, allergy information, and frequently asked questions in English and Japanese.<br />
+          QRコードを読み取ると、食べ放題のルール、コース、アレルギー情報、よくある質問を英語・日本語で確認できます。
+        </p>
       </header>
 
-      <section class="section">
-        <h2>How to Use</h2>
+      <section class="section" id="system">
+        <h2>All-You-Can-Eat System | 食べ放題システム</h2>
         <ol>
-          <li>Place QR codes on tables, at the entrance, and on menus</li>
-          <li>Guests scan the code using their smartphones</li>
-          <li>Guests solve simple questions through the FAQ and ask staff only when needed</li>
+          <li>
+            Choose one course for everyone at the same table. / 同じテーブルのお客様は全員同じコースをお選びください。
+          </li>
+          <li>
+            Dining time is 120 minutes, and last order is 30 minutes before the end. / お食事時間は120分、ラストオーダーは終了30分前です。
+          </li>
+          <li>
+            First, our staff will bring the first meat platter to your table. Please start with this platter before ordering additional items. / 最初にスタッフがお肉の盛り合わせをお席までお持ちします。追加注文の前に、まずはこちらの盛り合わせからお召し上がりください。
+          </li>
+          <li>
+            A touch panel is available at each table. Once the panel switches to the all-you-can-eat menu, please place additional orders from the touch panel. / 各テーブルにタッチパネルがあります。食べ放題メニューに切り替わりましたら、追加注文はタッチパネルからお願いします。
+          </li>
+          <li>
+            Please order in small portions so the grill stays hot and food does not go to waste. / 網の温度を保ち、食べ残しを防ぐため、少量ずつご注文ください。
+          </li>
+          <li>
+            Extra charges may apply for large amounts of leftovers. / 大量の食べ残しがある場合、追加料金をいただくことがあります。
+          </li>
+          <li>
+            Please ask staff when you need a grill change, scissors, tongs, or help cooking meat safely. / 網交換、ハサミ、トング、焼き加減の確認はスタッフへお声がけください。
+          </li>
         </ol>
       </section>
 
+      <section class="section" id="courses">
+        <h2>Course Options | コース種類</h2>
+        <details class="faq-item" open>
+          <summary>Standard Course | スタンダードコース</summary>
+          <p>
+            Includes popular Korean BBQ cuts such as pork belly, chicken, marinated beef, kimchi, namul, rice, soup, and lettuce wraps.<br />
+            サムギョプサル、鶏肉、味付け牛肉、キムチ、ナムル、ご飯、スープ、サンチュなどの定番メニューが含まれます。
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Premium Course | プレミアムコース</summary>
+          <p>
+            Includes everything in the Standard Course plus premium beef cuts, seafood options, cheese dak-galbi, and selected Korean side dishes.<br />
+            スタンダードコースの内容に加え、上質な牛肉、海鮮、チーズタッカルビ、厳選韓国惣菜をお楽しみいただけます。
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Kids Course | キッズコース</summary>
+          <p>
+            A discounted course for children with access to mild dishes, rice, soup, vegetables, and dessert. Age rules may vary by store.<br />
+            お子様向けの割引コースです。辛くない料理、ご飯、スープ、野菜、デザートをご利用いただけます。対象年齢は店舗により異なります。
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Drink Add-On | 飲み放題オプション</summary>
+          <p>
+            Soft drink and alcoholic drink add-ons may be available. Please ask staff for today’s drink menu and age verification requirements.<br />
+            ソフトドリンク飲み放題、アルコール飲み放題を追加できる場合があります。本日のドリンクメニューと年齢確認についてはスタッフへお尋ねください。
+          </p>
+        </details>
+      </section>
+
+      <section class="section" id="allergy">
+        <h2>Allergy Information | アレルギー情報</h2>
+        <p>
+          Our kitchen handles beef, pork, chicken, seafood, eggs, milk, wheat, soy, sesame, peanuts, tree nuts, and shellfish. Many marinades and sauces contain soy sauce, sesame oil, garlic, chili paste, and wheat-derived ingredients.<br />
+          当店の厨房では、牛肉、豚肉、鶏肉、魚介類、卵、乳、小麦、大豆、ごま、落花生、ナッツ類、甲殻類を取り扱っています。タレやソースには醤油、ごま油、にんにく、コチュジャン、小麦由来原料が含まれる場合があります。
+        </p>
+        <p>
+          Cross-contact may occur on shared grills, utensils, fryers, and preparation areas. If you have allergies or dietary restrictions, please tell our staff before ordering. We will explain ingredients where possible, but we cannot guarantee a completely allergen-free meal.<br />
+          共用の網、調理器具、フライヤー、作業場を使用するため、アレルゲンの混入を完全に防ぐことはできません。アレルギーや食事制限がある場合は、ご注文前にスタッフへお知らせください。可能な範囲で原材料をご案内しますが、完全な除去は保証できません。
+        </p>
+      </section>
+
       <section class="section" id="faq">
-        <h2>Frequently Asked Questions</h2>
+        <h2>Frequently Asked Questions | よくある質問</h2>
 
         <details class="faq-item" open>
-          <summary>How do I place an order?</summary>
-          <p>Please tell our staff the menu item name. If mobile ordering is available, follow the in-store instructions.</p>
+          <summary>How do I order more food? | 追加注文はどうすればよいですか？</summary>
+          <p>
+            After the first meat platter arrives and the table touch panel switches to the all-you-can-eat menu, please place additional orders from the touch panel.<br />
+            最初のお肉の盛り合わせが到着し、卓上タッチパネルが食べ放題メニューに切り替わりましたら、追加注文はタッチパネルからお願いします。
+          </p>
         </details>
 
         <details class="faq-item">
-          <summary>Can you accommodate food allergies?</summary>
-          <p>We will do our best. Please inform us of any allergens (such as eggs, dairy, wheat, or nuts) before ordering.</p>
+          <summary>Can I change my course after starting? | 開始後にコース変更はできますか？</summary>
+          <p>
+            Course changes are generally not available after the first order. Please confirm your course before starting.<br />
+            最初のご注文後は原則としてコース変更できません。開始前にコース内容をご確認ください。
+          </p>
         </details>
 
         <details class="faq-item">
-          <summary>What payment methods do you accept?</summary>
-          <p>We accept cash, credit cards, and transit IC cards. Please check the register display for QR payment availability.</p>
+          <summary>Can I take leftovers home? | 食べ残しを持ち帰れますか？</summary>
+          <p>
+            For food safety, leftovers from the all-you-can-eat course cannot be taken home.<br />
+            衛生管理上、食べ放題の食べ残しはお持ち帰りいただけません。
+          </p>
         </details>
 
         <details class="faq-item">
-          <summary>Can I get an English menu?</summary>
-          <p>Yes. Please ask our staff for an English menu.</p>
+          <summary>How do I request a grill change? | 網交換をお願いできますか？</summary>
+          <p>
+            Yes. Please call staff when the grill becomes dark, sticky, or smoky.<br />
+            はい。網が焦げついたり煙が多くなったりした場合は、スタッフへお声がけください。
+          </p>
         </details>
 
         <details class="faq-item">
-          <summary>How do I ask for the bill?</summary>
-          <p>Please tell the staff, "Could I have the bill, please?"</p>
+          <summary>Are vegetarian or halal options available? | ベジタリアン・ハラール対応はありますか？</summary>
+          <p>
+            Availability varies by store. Please ask staff before ordering because shared equipment is used in the kitchen.<br />
+            店舗により対応状況が異なります。厨房では共用設備を使用しているため、ご注文前にスタッフへご確認ください。
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What payment methods do you accept? | 支払い方法は何がありますか？</summary>
+          <p>
+            Cash, credit cards, transportation IC cards, and QR payments may be accepted depending on the store. Please check at the register.<br />
+            現金、クレジットカード、交通系IC、QR決済をご利用いただける場合があります。レジにてご確認ください。
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How do I ask for the bill? | お会計はどうすればよいですか？</summary>
+          <p>
+            Please press the call button or tell staff, “Check, please.” / 呼び出しボタンを押すか、スタッフへ「お会計をお願いします」とお伝えください。
+          </p>
         </details>
       </section>
 
       <section class="section note">
-        <h2>Operations Note</h2>
-        <p>This file is a standalone demo page separate from the main landing page. Please add your own store-specific questions as needed.</p>
+        <h2>Store Note | 店舗からのお知らせ</h2>
+        <p>
+          Menu items, course names, prices, time limits, and allergen details are examples for this demo page. Please replace them with store-specific information before publishing.<br />
+          メニュー、コース名、価格、制限時間、アレルゲン情報はデモ用の例です。公開前に各店舗の実際の情報へ差し替えてください。
+        </p>
       </section>
     </main>
   </body>
