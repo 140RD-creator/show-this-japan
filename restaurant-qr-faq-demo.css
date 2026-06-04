@@ -1,9 +1,12 @@
 :root {
-  --bg: #f6f8fc;
-  --text: #1d2433;
-  --card: #ffffff;
-  --accent: #d64c45;
-  --line: #e4e8f2;
+  --bg: #2a120c;
+  --text: #231915;
+  --card: rgba(255, 253, 247, 0.94);
+  --accent: #c8322c;
+  --line: rgba(92, 43, 30, 0.18);
+  --kimchi-red: #cd2e3a;
+  --taegeuk-blue: #0047a0;
+  --grill: rgba(65, 35, 28, 0.16);
 }
 
 * { box-sizing: border-box; }
@@ -11,9 +14,32 @@
 body {
   margin: 0;
   font-family: "Inter", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at 10% 12%, rgba(205, 46, 58, 0.26) 0 5rem, transparent 5.2rem),
+    radial-gradient(circle at 88% 16%, rgba(0, 71, 160, 0.2) 0 4.5rem, transparent 4.7rem),
+    radial-gradient(ellipse at 18% 82%, rgba(252, 198, 92, 0.28) 0 6rem, transparent 6.4rem),
+    radial-gradient(ellipse at 82% 78%, rgba(139, 47, 28, 0.32) 0 7rem, transparent 7.4rem),
+    repeating-linear-gradient(90deg, transparent 0 34px, var(--grill) 34px 38px),
+    repeating-linear-gradient(0deg, transparent 0 34px, var(--grill) 34px 38px),
+    linear-gradient(135deg, #fff6e8 0%, #f9e1c5 46%, #f5d7bd 100%);
   color: var(--text);
   line-height: 1.7;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "🥩  韓国 BBQ  🇰🇷  삼겹살  🍖  KOREAN BBQ";
+  position: fixed;
+  inset: auto 0 1.5rem;
+  z-index: -1;
+  color: rgba(87, 31, 22, 0.1);
+  font-size: clamp(2.4rem, 8vw, 5.4rem);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-align: center;
+  white-space: nowrap;
+  transform: rotate(-6deg);
+  pointer-events: none;
 }
 
 .page {
@@ -23,10 +49,29 @@ body {
 }
 
 .hero {
-  background: linear-gradient(140deg, #253c67 0%, #355992 100%);
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(55, 18, 12, 0.86), rgba(112, 32, 20, 0.86)),
+    radial-gradient(circle at 18% 22%, var(--kimchi-red) 0 9%, transparent 9.4%),
+    radial-gradient(circle at 78% 20%, var(--taegeuk-blue) 0 8%, transparent 8.5%),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0 12px, transparent 12px 24px),
+    linear-gradient(140deg, #42160f 0%, #8e2f1f 58%, #20110e 100%);
   color: #fff;
+  border: 1px solid rgba(255, 218, 160, 0.35);
   border-radius: 16px;
+  box-shadow: 0 18px 45px rgba(70, 24, 12, 0.25);
   padding: 1.4rem;
+}
+
+.hero::after {
+  content: "🥩 🇰🇷";
+  position: absolute;
+  right: 1rem;
+  bottom: 0.4rem;
+  font-size: clamp(2.4rem, 10vw, 5.5rem);
+  opacity: 0.24;
+  pointer-events: none;
 }
 
 .tag {
@@ -50,7 +95,9 @@ h2 { color: var(--accent); font-size: 1.18rem; }
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(72, 32, 20, 0.12);
   padding: 1rem;
+  backdrop-filter: blur(3px);
 }
 
 ol {
@@ -62,7 +109,7 @@ ol {
   border: 1px solid var(--line);
   border-radius: 10px;
   padding: 0.7rem 0.8rem;
-  background: #fcfdff;
+  background: rgba(255, 251, 244, 0.88);
 }
 
 .faq-item + .faq-item { margin-top: 0.6rem; }
@@ -75,5 +122,5 @@ summary {
 .faq-item p { margin: 0.5rem 0 0; }
 
 .note {
-  border-left: 4px solid #355992;
+  border-left: 4px solid var(--accent);
 }
