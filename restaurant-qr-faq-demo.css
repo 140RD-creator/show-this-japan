@@ -120,9 +120,18 @@ h2 { color: var(--accent); font-size: 1.18rem; }
   line-height: 1.35;
 }
 
+.course-name-jp {
+  display: inline-block;
+  font-weight: 700;
+}
+
 .course-card p,
 .course-help {
   margin: 0.75rem 0 0;
+}
+
+.course-card p + p {
+  margin-top: 0.4rem;
 }
 
 .course-details {
@@ -133,7 +142,7 @@ h2 { color: var(--accent); font-size: 1.18rem; }
 
 .course-details div {
   display: grid;
-  grid-template-columns: minmax(5.2rem, 0.45fr) 1fr;
+  grid-template-columns: minmax(5.7rem, 0.45fr) 1fr;
   gap: 0.5rem;
 }
 
