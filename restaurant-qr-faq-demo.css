@@ -100,6 +100,58 @@ h2 { color: var(--accent); font-size: 1.18rem; }
   backdrop-filter: blur(3px);
 }
 
+.course-grid {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.course-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 251, 244, 0.9);
+  padding: 0.9rem;
+}
+
+.course-card h3 {
+  margin: 0 0 0.65rem;
+  color: #7d2418;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.course-card p,
+.course-help {
+  margin: 0.75rem 0 0;
+}
+
+.course-details {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+}
+
+.course-details div {
+  display: grid;
+  grid-template-columns: minmax(5.2rem, 0.45fr) 1fr;
+  gap: 0.5rem;
+}
+
+.course-details dt {
+  color: #6c3a2c;
+  font-weight: 700;
+}
+
+.course-details dd {
+  margin: 0;
+}
+
+.course-help {
+  border-top: 1px solid var(--line);
+  padding-top: 0.8rem;
+  font-weight: 700;
+}
+
 ol {
   margin: 0.4rem 0 0 1.1rem;
   padding: 0;
