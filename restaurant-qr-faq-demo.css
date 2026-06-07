@@ -107,17 +107,81 @@ h2 { color: var(--accent); font-size: 1.18rem; }
 }
 
 .course-card {
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 12px;
   background: rgba(255, 251, 244, 0.9);
-  padding: 0.9rem;
 }
 
-.course-card h3 {
-  margin: 0 0 0.65rem;
+.course-summary {
+  position: relative;
+  display: grid;
+  gap: 0.65rem;
+  padding: 0.9rem 2.7rem 0.9rem 0.9rem;
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, rgba(255, 247, 235, 0.96), rgba(255, 235, 214, 0.9)),
+    rgba(255, 251, 244, 0.9);
+  list-style: none;
+  transition: background 160ms ease, box-shadow 160ms ease;
+}
+
+.course-summary::-webkit-details-marker {
+  display: none;
+}
+
+.course-summary::after {
+  content: "＋";
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  display: grid;
+  width: 1.7rem;
+  height: 1.7rem;
+  place-items: center;
+  border: 1px solid rgba(200, 50, 44, 0.28);
+  border-radius: 999px;
+  background: rgba(200, 50, 44, 0.1);
+  color: var(--accent);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.course-card[open] .course-summary {
+  border-radius: 12px 12px 0 0;
+  box-shadow: inset 0 -1px 0 var(--line);
+}
+
+.course-card[open] .course-summary::after {
+  content: "−";
+}
+
+.course-summary:hover {
+  background:
+    linear-gradient(135deg, rgba(255, 241, 220, 0.98), rgba(255, 228, 202, 0.94)),
+    rgba(255, 251, 244, 0.9);
+}
+
+.course-summary:focus-visible {
+  outline: 3px solid rgba(200, 50, 44, 0.35);
+  outline-offset: 3px;
+}
+
+.course-title {
+  display: block;
+  margin: 0;
   color: #7d2418;
   font-size: 1rem;
+  font-weight: 800;
   line-height: 1.35;
+}
+
+.course-panel {
+  padding: 0.85rem 0.9rem 0.95rem;
+}
+
+.course-panel p:first-child {
+  margin-top: 0;
 }
 
 .course-name-jp {
@@ -167,19 +231,19 @@ h2 { color: var(--accent); font-size: 1.18rem; }
   margin: 0;
 }
 
-.course-details div {
+.course-detail {
   display: grid;
   grid-template-columns: minmax(5.7rem, 0.45fr) 1fr;
   gap: 0.5rem;
 }
 
-.course-details dt {
+.course-detail-label {
   color: #6c3a2c;
   font-weight: 700;
 }
 
-.course-details dd {
-  margin: 0;
+.course-detail-value {
+  min-width: 0;
 }
 
 .course-help {
@@ -234,4 +298,15 @@ summary {
 
 .note {
   border-left: 4px solid var(--accent);
+}
+
+@media (max-width: 520px) {
+  .course-summary {
+    padding-right: 2.4rem;
+  }
+
+  .course-detail {
+    grid-template-columns: 1fr;
+    gap: 0.05rem;
+  }
 }
