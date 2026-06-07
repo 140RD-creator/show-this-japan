@@ -188,6 +188,29 @@ h2 { color: var(--accent); font-size: 1.18rem; }
   font-weight: 700;
 }
 
+.chooser-grid {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 0.8rem;
+}
+
+.chooser-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 251, 244, 0.9);
+  padding: 0.8rem;
+}
+
+.chooser-card h3 {
+  margin: 0 0 0.35rem;
+  color: #7d2418;
+  font-size: 0.98rem;
+}
+
+.chooser-card p {
+  margin: 0;
+}
+
 ol {
   margin: 0.4rem 0 0 1.1rem;
   padding: 0;
